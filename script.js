@@ -149,12 +149,10 @@ document.querySelectorAll('a[href="https://forms.gle/REEMPLAZAR_CON_TU_FORM"]').
 });
 
 function money(value) {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-  }).format(value) + " USD";
+  return "$" + new Intl.NumberFormat("es-CL", {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0
+  }).format(value) + " CLP";
 }
 
 function renderGifts() {
