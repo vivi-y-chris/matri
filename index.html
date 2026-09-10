@@ -3,26 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nuestra invitación</title>
-  <meta name="description" content="Invitación de matrimonio" />
+  <title>Christopher & Viviana</title>
+  <meta name="description" content="Invitación de matrimonio de Christopher y Viviana" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
+
 <body class="locked">
   <section id="auth-screen" class="auth-screen" aria-label="Acceso con clave">
-    <div class="auth-card auth-card--image">
-      <p class="eyebrow">Invitación</p>
-      <img
-        class="auth-hero-image"
-        src="portada-invitacion.jpeg"
-        alt="Invitación de Christopher y Viviana"
-      />
+    <div class="auth-card">
+      <p class="eyebrow">Invitation</p>
+      <img class="auth-image" src="invite.jpeg" alt="Invitación de Christopher y Viviana" />
 
       <form id="password-form" class="password-form">
-        <label for="password-input">Clave</label>
+        <label for="password-input">Password</label>
         <div class="password-row">
-          <input id="password-input" type="password" autocomplete="current-password" placeholder="Escribe la clave" required />
-          <button type="submit">Entrar</button>
+          <input id="password-input" type="password" autocomplete="current-password" placeholder="Write down password" required />
+          <button type="submit">Enter</button>
         </div>
         <p id="auth-error" class="auth-error" role="alert" aria-live="polite"></p>
       </form>
@@ -30,131 +30,200 @@
   </section>
 
   <main id="site-content" class="site-content hidden">
-    <section class="hero section">
-      <div class="hero-card">
-        <p class="eyebrow">Tenemos el honor de invitarte a nuestro matrimonio</p>
-        <h1>Christopher &amp; Viviana</h1>
-        <p class="date-line">Sábado 9 de enero de 2027</p>
-        <p class="place-line">Casona Los Paltos, Paine · 19:00 hrs</p>
-        <a class="primary-button" href="#regalos">Ver lista de regalos</a>
-      </div>
-    </section>
+    <section class="hero section" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">We're getting married</p>
+          <h1>Chris &amp; Vivi</h1>
+          <p class="hero-subtitle">We are so happy to invite you to our wedding!</p>
 
-    <section class="section intro-section">
-      <div class="narrow">
-        <h2>Queremos celebrar contigo</h2>
-        <p>
-          Estamos muy felices de compartir este día con nuestras familias y amigos.
-          Aquí encontrarás la información principal de la ceremonia, celebración y regalos.
-        </p>
-      </div>
-    </section>
+          <div class="hero-actions" aria-label="Accesos rápidos">
+            <a class="primary-button" href="#rsvp">RSVP</a>
+            <a class="secondary-button" href="#detalles">Coordinates</a>
+            <a class="secondary-button" href="#regalos">Gifts</a>
+          </div>
 
-    <section class="section info-grid" id="info">
-      <article class="info-card">
-        <h3>Fecha</h3>
-        <p>Sábado 9 de enero de 2027</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Hora</h3>
-        <p>19:00 hrs</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Lugar</h3>
-        <p>Casona Los Paltos<br />Paine, Chile</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Dress code</h3>
-        <p>Formal / semi formal</p>
-      </article>
-    </section>
-
-    <section class="section countdown-section">
-      <div class="narrow">
-        <p class="eyebrow">Falta poco</p>
-        <div id="countdown" class="countdown">Calculando...</div>
-      </div>
-    </section>
-
-    <section class="section timeline-section">
-      <div class="narrow">
-        <h2>Programa</h2>
-        <div class="timeline">
-          <div><span>19:00</span><p>Ceremonia</p></div>
-          <div><span>20:00</span><p>Cóctel</p></div>
-          <div><span>21:00</span><p>Cena</p></div>
-          <div><span>22:30</span><p>Fiesta</p></div>
+        <div class="hero-photo-grid" aria-label="Fotos">
+          <img src="anillo.jpeg" alt="Ilustración de la invitación" />
+          <img src="esta_nevando.jpeg" alt="Ilustración de la invitación" />
         </div>
       </div>
     </section>
 
-    <section class="section gifts-section" id="regalos">
-      <div class="narrow">
-        <p class="eyebrow">Regalos</p>
-        <h2>Tu presencia es nuestro mejor regalo</h2>
-        <p>
-          Si además quieres ayudarnos a empezar esta nueva etapa, puedes hacerlo mediante transferencia.
-        </p>
+    <section class="section details-section" id="detalles">
+      <div class="section-heading">
+        <h2>Wedding day coordinates</h2>
+      </div>
 
-        <div class="gift-layout">
-          <article class="transfer-card">
-            <h3>Datos de transferencia</h3>
-            <dl>
-              <div>
-                <dt>Nombre</dt>
-                <dd>Christopher / Viviana</dd>
-              </div>
-              <div>
-                <dt>RUT / ID</dt>
-                <dd>Completar</dd>
-              </div>
-              <div>
-                <dt>Banco</dt>
-                <dd>Completar</dd>
-              </div>
-              <div>
-                <dt>Tipo de cuenta</dt>
-                <dd>Completar</dd>
-              </div>
-              <div>
-                <dt>Número de cuenta</dt>
-                <dd>Completar</dd>
-              </div>
-              <div>
-                <dt>Email</dt>
-                <dd>Completar</dd>
-              </div>
-            </dl>
+      <div class="details-layout">
+        <div class="details-grid">
+          <article class="detail-card">
+            <span>Date</span>
+            <strong>January 9, 2027</strong>
           </article>
 
-          <article class="gift-card">
-            <h3>Ideas de regalo</h3>
-            <div class="gift-options">
-              <button type="button" data-gift="Luna de miel">Luna de miel</button>
-              <button type="button" data-gift="Cena especial">Cena especial</button>
-              <button type="button" data-gift="Hogar">Hogar</button>
-              <button type="button" data-gift="Experiencia">Experiencia</button>
-            </div>
-            <p id="gift-selected" class="gift-selected">Puedes escribir el motivo en el comentario de la transferencia.</p>
+          <article class="detail-card">
+            <span>Time</span>
+            <strong>19:00 h</strong>
+            <br>
+            <small>We'll start promptly!</small>
           </article>
+
+          <article class="detail-card">
+            <span>Location</span>
+            <strong>Casona Los Paltos</strong>
+            <br>
+            <small>El Bosque 1095, Paine, Santiago</small>
+          </article>
+
+          <article class="detail-card">
+            <span>Dress code</span>
+            <strong>Formal or semi formal</strong>
+            <br>
+            <small>It'll be hot. Ties and high heels not required, but welcome! </small>
+          </article>
+
+          <article class="detail-card">
+            <small>The party ends at 03:30 am</small>
+          </article>
+
         </div>
+
+        <div class="map-card">
+          <div class="map-image-frame">
+            <img class="map-image" src="mapa.jpeg" alt="Illustrated map to Casona Los Paltos" />
+          </div>
+
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Casona%20Los%20Paltos%20Paine%20Chile" target="_blank" rel="noopener">
+            Open location in Google Maps
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo-grid" aria-label="Más fotos">
+        <img src="cartagena_parados.jpeg" alt="Ilustración de la invitación" />
+        <img src="carrete.jpeg" alt="Ilustración de la invitación" />
+        <img src="wisco_patente.jpeg" alt="Ilustración de la invitación" />
       </div>
     </section>
 
     <section class="section rsvp-section" id="rsvp">
-      <div class="narrow">
-        <h2>Confirmación</h2>
-        <p>Confírmanos tu asistencia por WhatsApp.</p>
-        <a class="primary-button" href="https://wa.me/00000000000?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20matrimonio" target="_blank" rel="noopener">Confirmar asistencia</a>
+      <div class="section-heading">
+        <p class="eyebrow">Confirmation</p>
+        <h2>RSVP</h2>
+      </div>
+
+      <div class="text-card">
+        <p>
+          We know that traveling all the way to Chile is a major journey, and we are incredibly grateful you are considering making the trip to celebrate with us! To help you secure the best travel arrangements—and to assist us with planning—we kindly ask that you confirm your attendance <strong>as soon as possible</strong>. In general plane ticket prices only rise as the date approaches, so early booking is highly recommended.
+        </p>
+
+        <a class="primary-button" href="https://forms.gle/REEMPLAZAR_CON_TU_FORM" target="_blank" rel="noopener">
+          Confirm attendance
+        </a>
+      </div>
+    </section>
+
+    <section class="section gifts-section" id="regalos">
+      <div class="gifts-intro">
+        <p class="eyebrow">Gifts</p>
+        <h2>Your presence is the most important gift to us,</h2>
+        <p> 
+          we truly do not expect anything else. However, 
+          for those who would still like to give us something ... 
+          Although a fancy ice cream maker sounds incredibly tempting, 
+          this time we would prefer gifts that will stay in our memories forever: 
+          trips, experiences, and little adventures to enjoy together.
+        </p>
+      </div>
+
+      <div id="gift-list" class="gift-list" aria-label="Lista de regalos"></div>
+
+      <aside class="total-card" aria-live="polite">
+        <div>
+          <span>Total</span>
+          <strong id="total-usd">$0.00 USD</strong>
+        </div>
+      </aside>
+
+      <div class="gift-submit-card">
+        <h3>Leave us a message</h3>
+      
+        <form id="gift-form">
+          <label for="guest-name">Name</label>
+          <input id="guest-name" type="text" placeholder="Your name" required />
+
+          <div class="gift-preview-card">
+            <h4>Your selected gifts</h4>
+            <ul id="gift-preview-list">
+              <li>No gifts selected yet.</li>
+            </ul>
+          </div>
+
+          <label for="guest-message">Message</label>
+          <textarea id="guest-message" placeholder="Write us a message"></textarea>
+
+          <button type="submit">Send gift selection</button>
+          <p id="gift-form-status"></p>
+        </form>
+      </div>
+
+      <div class="payment-section">
+        <h3>Send us your gift</h3>
+        <p>Option 1 recommended for people without chilean bank accounts, Option 2 recommended for chilean non-resident aliens like us :D</p>
+
+        <div class="payment-grid">
+          <article class="payment-box">
+            <h4>Option 1</h4>
+            <p class="payment-title">Zelle</p>
+            <dl>
+              <div>
+                <dt>Name</dt>
+                <dd>Viviana Diaz Titelman</dd>
+              </div>
+              <div>
+                <dt>Phone number</dt>
+                <dd>608 448 1202</dd>
+              </div>
+              <div>
+                <dt>Message to recipient</dt>
+                <dd>Wedding gift</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="payment-box">
+            <h4>Option 2</h4>
+            <p class="payment-title">Transferencia directa</p>
+            <dl>
+              <div>
+                <dt>Nombre</dt>
+                <dd>Christopher Volkwein</dd>
+              </div>
+              <div>
+                <dt>Rut</dt>
+                <dd>17.617.360-2</dd>
+              </div>
+              <div>
+                <dt>Banco</dt>
+                <dd>Scotiabank - Cuenta corriente</dd>
+              </div>
+              <div>
+                <dt>Cuenta</dt>
+                <dd>2651737138</dd>
+              </div>
+              <div>
+                <dt>Mail</dt>
+                <dd>chvolk@gmail.com</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>Con cariño, Christopher &amp; Viviana</p>
-      <button id="lock-again" class="text-button" type="button">Cerrar invitación</button>
+      <p>Con love, Chris &amp; Vivi</p>
+      <button id="lock-again" class="text-button" type="button">Close invitation</button>
     </footer>
   </main>
 </body>
