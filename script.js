@@ -216,7 +216,7 @@ function updateGiftPreview() {
     .filter(Boolean);
 
   if (selected.length === 0) {
-    previewList.innerHTML = "<li>No gifts selected yet.</li>";
+    previewList.innerHTML = "<li>No has seleccionado regalos.</li>";
     return;
   }
 
