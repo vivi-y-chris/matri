@@ -83,13 +83,11 @@ const gifts = [
   { name: "Clases de salsa por un mes 🎺🎶", price: 80000 },  
   { name: "Una cena deliciosa en la Luna de Miel 🍽️", price: 90000 },  
   { name: "Brunch de lujo 🍳🍽️", price: 100000 },  
-  { name: "Subir el Empire State en Nueva York 🎇🎆", price: 120000 },  
-  { name: "Una noche de hospedaje en Nueva York 🛁🍷", price: 150000 },  
+  { name: "Ir al teatro en Nueva York 🎇🎆", price: 120000 },  
   { name: "Un tour por los Highlands de Escocia 🏔️🌿", price: 150000 },  
   { name: "Tour por Teotihuacán en la luna de miel 🏔️🌿", price: 200000 },  
   { name: "Entradas a un concierto de SOAD en Chicago 🎵🎤", price: 250000 },
-  { name: "Viaje por tierra a Toronto 🚗", price: 300000 },
-  { name: "Pasajes a Vancouver ✈️🚲", price: 400000 }, 
+  { name: "Viaje por tierra a Toronto 🚗", price: 300000 }, 
   { name: "Pasajes a Nueva York ✈️🍷", price: 500000 }, 
   { name: "Viaje por Yosemite National Park 🏔️🌅", price: 600000 },
   { name: "Viaje de Wisconsin a Chile ✈️🏔️", price: 900000 },
@@ -172,7 +170,7 @@ function renderGifts() {
         <span class="qty-label">Quantity</span>
         <div class="qty-control" aria-label="Quantity for ${gift.name}">
           <button type="button" class="qty-minus" data-index="${index}" aria-label="Restar">−</button>
-          <input type="number" min="0" step="1" value="0" inputmode="numeric" data-index="${index}" aria-label="Quantity" />
+          <input type="number" min="0" step="1" value="0" inputmode="numeric" data-index="${index}" aria-label="Cantidad" />
           <button type="button" class="qty-plus" data-index="${index}" aria-label="Sumar">+</button>
         </div>
       </div>
