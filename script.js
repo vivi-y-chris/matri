@@ -167,10 +167,10 @@ function renderGifts() {
       </div>
 
       <div class="gift-card-bottom">
-        <span class="qty-label">Quantity</span>
+        <span class="qty-label">Cantidad</span>
         <div class="qty-control" aria-label="Quantity for ${gift.name}">
           <button type="button" class="qty-minus" data-index="${index}" aria-label="Restar">−</button>
-          <input type="number" min="0" step="1" value="0" inputmode="numeric" data-index="${index}" aria-label="Cantidad" />
+          <input type="number" min="0" step="1" value="0" inputmode="numeric" data-index="${index}" aria-label="Quantity" />
           <button type="button" class="qty-plus" data-index="${index}" aria-label="Sumar">+</button>
         </div>
       </div>
